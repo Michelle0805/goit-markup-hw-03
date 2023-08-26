@@ -25,38 +25,40 @@ body {
   --white: #fff;
   --blue: #0000ff;
 }
-.logo {
+.header-logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  padding: 25.5px 0;
-  display: inline;
+ 
+}
+
+.header-page {
+  padding: 24px 0;
 }
 
 .header-page a {
-  color: var(--slate);
+  color: var(--navy-blue);
 }
 
-.header-page a:hover,
-.header-page a:focus {
-  color: var(--blue);
-}
+
 
 .header-page a:active {
-  color: var(--iris);
+  color: var(--ocean);
 }
 
 .header-page-menu {
- display: inline;
+ display: inline-block;
+ margin-left: 76px;
 
 }
 .header-page-menu-list {
   display: inline-flex;
   align-items: flex-start;
-  padding: 24px 280px 24px 76px;
+  /* padding: 24px 280px 24px 76px; */
+  gap: 40px;
   
 }
 
@@ -65,24 +67,33 @@ body {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   gap: 40px;
 }
 
 
 .header-page-address {
-  display: inline;
+  display: inline-flex;
   color: var(--slate);
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+  /* font-weight: 400; */
+  /* line-height: 24px;
+  letter-spacing: 0.32px; */
+  gap: 40px;
+  align-items: center;
+  margin-left: 332px;
   
 }
-.header-page-address-email {
-  margin-right: 40px;
+.header-page-address-link {
+  /* margin-right: 40px; */
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: var(--slate);
 }
 
+.header-page-address-link:active {
+ color: var(--ocean);
+}
 
 .projects-list-item-title, .what-heading {
   white-space: nowrap;
@@ -103,7 +114,7 @@ a {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
-  padding: 188px 472px 40px;
+  padding: 188px 472px 48px;
 }
 .main-page-hero {
   background: var(--navy-blue);
@@ -117,7 +128,7 @@ a {
 }
 
 button .main-page-hero-button {
-  margin: 356px 635px 188px 636px;
+  /* margin: 356px 635px 188px 636px; */
 }
 
 .main-page-hero-button {
@@ -127,7 +138,7 @@ button .main-page-hero-button {
   letter-spacing: 0.64px;
   display: inline-block;
   border-radius: 4px;
-  color: var(--cloud);
+  color: var(--white);
   background: var(--iris);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   gap: 10px;
@@ -137,8 +148,8 @@ button .main-page-hero-button {
 }
 
 .main-page-hero-button:hover {
-  color: var(--cloud);
-  background: var(--blue);
+  color: var(--white);
+  background: var(--ocean);
 }
 h2 {
   color: var(--navy-blue);
@@ -170,13 +181,23 @@ p {
 .feature-list {
   display: inline-flex;
   text-align: justify;
+  gap: 24px;
   
 }
-.feature-list-item  {
-  margin-right: 24px;
+
+/* .feature-list-item {
+  margin-bottom: 8px; */
+
+.feature-list-item p {
+  width: 264px;
+  height: 72px;
+  
 }
+
 .feature-list-item-head {
-  margin-bottom: 5px;
+  width: 264px;
+  height: 24px;
+  margin-bottom: 8px;
 }
 
 .what {
@@ -234,7 +255,7 @@ p {
   background-color: var(--navy-blue);
   width: 1440px;
   height: 312px;
-  padding-top: 101px;;
+  padding: 101.5px 0 100px;
   
   
 }
@@ -260,12 +281,12 @@ footer p {
 }
 
 
-.header-web:hover,
+/* .header-web:hover,
 .header-studio:hover,
 .footer-web:hover,
 .footer-studio:hover {
   color: var(--blue);
-}
+} */
 
 .header-web,
 .footer-web {
@@ -279,9 +300,9 @@ footer p {
   color: var(--cloud);
 }
 
-.section-container {
+.container {
   width: 1158px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -311,16 +332,18 @@ footer p {
 
 .portfolio-list button:hover {
   color: var(--cloud);
-  background: var(--iris);
+  background: var(--ocean);
   cursor: pointer;
 }
 
 .projects-list {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
+  display: inline-flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  align-items: justify;
   flex-wrap: wrap;
-  margin: 72px 0 120px 0;
+  padding: 72px 0 120px 0;
+  justify-content: space-between;
 }
 
 .projects-list-item {
@@ -329,16 +352,15 @@ footer p {
   width: 360px;
   height: 420px;
   flex-direction: column;
-  align-items: flex-start;
   border: 1px solid var(--cornflower, #E7E9FC);
   background: var(--white, #FFF);
-  
+  text-indent: 16px;
 }
 
 .projects-list-item-title {
-  margin: 32px 0 8px 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
-.projects-list-item-description {
-  margin-left: 16px;
-}
+
+
