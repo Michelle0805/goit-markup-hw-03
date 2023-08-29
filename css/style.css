@@ -10,8 +10,6 @@ body {
   font-size: 16px;
   width: 100%;
   min-height: 100vh;
-  /* width: 1440px;
-  height: 2592px; */
 }
 
 :root {
@@ -52,11 +50,6 @@ button {
 }
 
 
-
-/* .header-page a:active {
-  color: var(--ocean);
-} */
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -70,7 +63,6 @@ button {
 .header-page-menu-list {
   display: inline-flex;
   align-items: flex-start;
-  /* padding: 24px 280px 24px 76px; */
   gap: 40px;
   
 }
@@ -80,8 +72,7 @@ button {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-  /* margin-right: 40px; */
-  /* gap: 40px; */
+
 }
 
 .header-page-item-link:hover{
@@ -92,16 +83,12 @@ button {
   display: inline-flex;
   color: var(--slate);
   font-style: normal;
-  /* font-weight: 400; */
-  /* line-height: 24px;
-  letter-spacing: 0.32px; */
   gap: 40px;
   align-items: center;
-  /* margin-left: 332px; */
+ 
   
 }
 .header-page-address-link {
-  /* margin-right: 40px; */
   line-height: 24px;
   letter-spacing: 0.32px;
   color: var(--slate);
@@ -135,7 +122,7 @@ a {
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
-  /* padding: 188px 0px 48px 0px; */
+
 }
 .main-page-hero {
   background: var(--navy-blue);
@@ -145,11 +132,6 @@ a {
 .main-page {
   display: block;
   text-align: center;
-  
-}
-
-button .main-page-hero-button {
-  /* margin: 356px 635px 188px 636px; */
 }
 
 .main-page-hero-button {
@@ -166,7 +148,6 @@ button .main-page-hero-button {
   cursor: pointer;
   justify-content: center;
   margin: 0 auto;
-  
 }
 
 .main-page-hero-button:hover {
@@ -202,25 +183,21 @@ p {
 }
 
 .feature-container {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .feature-list {
-  display: inline-flex;
+  display: flex;
   text-align: justify;
-  gap: 24px;
-  
+  justify-content: space-between;
+  gap: 34px;
 }
-
-/* .feature-list-item {
-  margin-bottom: 8px; */
 
 .feature-list-item p {
   width: 264px;
   height: 72px;
-  
 }
 
 .feature-list-item-head {
@@ -234,7 +211,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 72px;
-  
 }
 
  .services {
@@ -256,23 +232,15 @@ p {
 }
 
 .team { 
-  /* width: 1440px; */
-  /* height: 732px; */
   background-color: var(--cloud);
   padding: 120px 0;
 }
 
-
-.team-heading {
-  /* padding-top: 120px; */
-  /* margin-bottom: 72px; */
-}
 .team-heading-list {
   display: inline-flex;
   justify-content: space-between;
   gap: 24px;
   
-
 }
 
 .team-name-container {
@@ -285,10 +253,9 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 0px 0px 4px 4px;
-  background: var(--white, #FFF);
+  background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  /* margin-right: 24px; */
-  
+
 }
 
 .team-heading-list-item-name {
@@ -297,10 +264,8 @@ p {
 
 .footer {
   background-color: var(--navy-blue);
-  /* width: 1440px; */
   height: 312px;
   padding: 101.5px 0 100px;
-  
   
 }
 
@@ -321,16 +286,7 @@ footer p {
   line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  
 }
-
-
-/* .header-web:hover,
-.header-studio:hover,
-.footer-web:hover,
-.footer-studio:hover {
-  color: var(--blue);
-} */
 
 .header-web,
 .footer-web {
@@ -346,7 +302,6 @@ footer p {
 
 .container {
   width: 1158px;
-  /* padding: 0 15px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -397,18 +352,14 @@ footer p {
   column-gap: 24px;
   align-items: justify;
   flex-wrap: wrap;
-  /* padding: 72px 0 120px 0; */
   justify-content: space-between;
 }
 
 .projects-list-item {
   
   display: flex;
-  /* width: 360px;
-  height: 420px; */
   flex-direction: column;
-  border: 1px solid var(--cornflower, #E7E9FC);
-  background: var(--white, #FFF);
+  background: var(--white);
   text-indent: 16px;
 }
 
@@ -417,8 +368,10 @@ footer p {
 }
 
 .projects-title-container {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid var(--cornflower);
+  border-top: unset;
 }
 
 
